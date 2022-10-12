@@ -8,7 +8,7 @@ const ColorGuesserBtn = ({
 }) => {
   const onClick = () => {
     if (choice === currColor) {
-      setFormMessage("Correct");
+      setFormMessage("Correct, keep going!");
       generateColors();
     } else {
       setFormMessage("Incorrect");
@@ -16,12 +16,7 @@ const ColorGuesserBtn = ({
   };
 
   return (
-    <button
-      onClick={onClick}
-      className="bg-gray-800 text-white font-bold py-2 px-4 
-      mt-4 mb-4 mx-8 shadow-lg border-b-4 border-primary hover:border-secondary 
-      rounded transition-all duration-300 ease-linear cursor-pointer"
-    >
+    <button onClick={onClick} className="hex-btn">
       {choice}
     </button>
   );

@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <main className='flex flex-col content-center items-center justify-evenly w-screen h-screen bg-gray-900 text-gray-50 shadow-[inset_0_0_4px_black]'>
+      <main className='flex flex-col content-center items-center justify-evenly w-full h-screen max-w-full bg-gray-900 text-gray-50 shadow-[inset_0_0_4px_black]'>
         <ColorGuesser/>
       </main>
       <Footer/>
